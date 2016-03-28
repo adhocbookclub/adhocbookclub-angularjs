@@ -1,5 +1,5 @@
 'use strict';
 
-var app = angular.module('adhocbookclubApp', [
+angular.module('adhocbookclubApp', [
   'ui.router'
 ]);

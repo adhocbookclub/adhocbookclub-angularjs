@@ -1,5 +1,6 @@
 'use strict';
 
-app.controller('MembersCtrl', function() {
+angular.module('adhocbookclubApp')
+.controller('MembersCtrl', function() {
 
 });

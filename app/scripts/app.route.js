@@ -1,16 +1,17 @@
 'use strict';
 
-app.config(function($stateProvider, $urlRouterProvider) {
+angular.module('adhocbookclubApp')
+.config(function($stateProvider, $urlRouterProvider) {
 
   // For any unmatched url, redirect to /
-  $urlRouterProvider.otherwise('/')
+  $urlRouterProvider.otherwise('/');
 
   // Now set up the states
   $stateProvider
   .state('/', {
     url: '/',
     templateUrl: 'views/main.html',
-    controller: 'MainCtrl'
+    controller: 'MainCtrl as main'
   })
   .state('about', {
     url: '/about',
